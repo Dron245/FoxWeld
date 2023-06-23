@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" class="diler">
+<html lang="ru" class="o_nas">
 	@@include('html/_head.htm',{
 		"title":"Станьте диллером"
 		})
@@ -57,39 +57,31 @@
 							<div class="form-diller__body">
 								<span class="form-diller__firsttitle">АНКЕТА ДИЛЕРА</span>
 								<fieldset >
-									<div class="form-diller__group-title">Личные данные</div>
 									<div class="form-diller__item">
-										<label class="form-diller__title">Имя и Фамилия<span>*</span></label>
-										<input data-required autocomplete="off" type="text" name="name" data-error="Введите имя и фамилию" placeholder="Иван Иванов" class="form-diller__input input">
+										<label class="form-diller__title">Личные данные<span>*</span></label>
+										<input data-required autocomplete="off" type="text" name="name" data-error="Введите Имя и Фамилию" placeholder="Имя и фамилия*" class="form-diller__input form-diller__input_top input">
 									</div>
 									<div class="form-diller__item">
-										<label class="form-diller__title">Должность</label>
-										<input autocomplete="off" type="text" name="dozhnost" data-error="Введите должность" placeholder="Директор" class="form-diller__input input tel">
+										<input data-required autocomplete="off" type="text" name="family" data-error="Введите должность" placeholder="Должность" class="form-diller__input input">
 									</div>
 									<div class="form-diller__item">
-										<label class="form-diller__title">Ваш телефон <span>*</span></label>
-										<input data-required autocomplete="off" type="tel" name="phone" data-error="Введите телефон" placeholder="+7(900)000-00-00" class="form-diller__input input tel">
+										<input data-required autocomplete="off" type="tel" name="phone" data-error="Введите телефон" placeholder="Ваш телефон*" class="form-diller__input input tel">
 									</div>
 									<div class="form-diller__item">
-										<label class="form-diller__title">Ваш e-mail <span>*</span></label>
-										<input data-required="email" autocomplete="off" type="email" name="email" data-error="Введите e-mail" placeholder="ivanov_ivan@yandex.ru" class="form-diller__input input">
+										<input data-required="email" autocomplete="off" type="email" name="email" data-error="Введите электронную почту" placeholder="Ваш e-mail*" class="form-diller__input input">
 									</div>
 									<div class="form-diller__item">
-										<label class="form-diller__title">Ваш город<span>*</span></label>
-										<input data-required autocomplete="off" type="text" name="companyname" data-error="Введите ваш город" placeholder="Москва" class="form-diller__input input">
-									</div>
-									<div class="form-diller__group-title">Информация о компании</div>
-									<div class="form-diller__item">
-										<label class="form-diller__title">Название компании<span>*</span></label>
-										<input data-required autocomplete="off" type="text" name="companyname" data-error="Введите название предприятия" placeholder="ИП 'Иванов'" class="form-diller__input input">
+										<input data-required autocomplete="off" type="text" name="city" data-error="Введите город" placeholder="Ваш город*" class="form-diller__input input">
 									</div>
 									<div class="form-diller__item">
-										<label class="form-diller__title">ИНН <span>*</span></label>
-										<input data-required autocomplete="off" type="text" name="inn" data-error="Введите ИНН" placeholder="0000000000" class="form-diller__input input inn" pattern="[0-9]{10,12}" title="введите 10 чисел, если физ. лицо или 12, если юр. лицо">
+										<label class="form-diller__title">Информация о компании</label>
+										<input data-required autocomplete="off" type="text" name="companyname" data-error="Введите название предприятия" placeholder="Название компании*" class="form-diller__input form-diller__input_top input">
 									</div>
 									<div class="form-diller__item">
-										<label class="form-diller__title">Сайт предприятия</label>
-										<input autocomplete="off" type="text" name="website" placeholder="ivanov.ru" class="form-diller__input input">
+										<input data-required autocomplete="off" type="text" name="inn" data-error="Введите ИНН" placeholder="ИНН*" class="form-diller__input input inn" pattern="[0-9]{10,12}" title="введите 10 чисел, если физ. лицо или 12, если юр. лицо">
+									</div>
+									<div class="form-diller__item">
+										<input autocomplete="off" type="text" name="website" placeholder="Сайт предприятия" class="form-diller__input input">
 									</div>
 								</fieldset>
 								<fieldset >
@@ -169,7 +161,7 @@
 								<fieldset>
 									<textarea class="form-diller__comment" autocomplete="off" name="form[]" placeholder="Комментарий" data-error="Ошибка" class="input"></textarea>
 								</fieldset>
-								<button type="submit" class="form-diller__button button">Отправить запрос</button>
+								<button type="submit" class="form-diller__button button">Отправить</button>
 								<div class="checkbox">
 									<input checked data-required id="c_11" data-error="прочтите и согласитесь с обработкой персональных данных" class="checkbox__input" type="checkbox" value="11" name="agreement">
 									<label for="c_11" class="checkbox__label"><div class="checkbox__body"></div><span class="checkbox__text">Оформляя заказ, вы принимаете условия Пользовательских соглашений и даёте согласие на обработку персональных данных согласно <a href="https://foxweld.ru/company/policy/">Политике конфиденциальности</a>.</span></label>
