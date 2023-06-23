@@ -1,0 +1,86 @@
+// Заголовки, общие БЄМ блоки и проче...
+.title {
+	//display: flex;
+	display: block;
+	// justify-content: center;
+	// text-align: center;
+	//margin: 0 auto;
+	text-align: center;
+	position: relative;
+	//@include adaptiveValue("font-size", 20, 16,1280,320,1);
+	font-size: rem(20);
+	text-transform: uppercase;
+	@media (max-width:$mobile){
+		 font-size: 18px; 
+	}
+	&::before,&::after {
+		content:'';
+		position: absolute;
+		//z-index: 0;
+		top: 50%;
+		//transform: translateY(-50%);
+		height: 1px;
+		//background-color: $mainColor;
+		background-color: #878289;
+		//transform: rotateZ(180deg);
+		//@include adaptiveValue("width", 490,65,1280,320,1);
+		width: 100%;
+	}
+	&::before{
+		right: 0;
+		
+		transform-origin: right;
+	}
+	&::after{
+		left: 0;
+		
+		transform-origin: left;
+	}
+	span {
+		position: relative;
+		padding: 0px 20px;
+		z-index: 2;
+		background-color: white;
+		&.title-bg {
+			background-color: #f8f8f8;
+		}
+	}
+	
+}
+
+// .title-bg {
+// 	background: $mainColor
+// }
+.text {
+	@include adaptiveValue("margin-top", 45, 25,1280,320,1);
+	//@include adaptiveValue("font-size", 20, 16,1280,320,1);
+	font-size: rem(20);
+
+	line-height: 1.5;
+	text-transform: uppercase;
+	span {
+		font-weight: 600;
+	}
+	@media (max-width:$mobile){
+		 text-align: center;
+		 font-size: rem(18);
+	}
+}
+
+button.slider-arrow {
+	cursor: pointer;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 40px 25px 40px 0;
+	border-color: transparent rgb(215,215,215) transparent transparent;
+	&.slider-arrow_next{
+		transform: rotate(180deg);
+		@media (max-width:$mobile){
+			justify-self: end; 
+	  }
+	}
+	@media (max-width:$mobile){
+		border-width: 25px 10px 25px 0;
+	}
+}
