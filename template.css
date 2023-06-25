@@ -2726,11 +2726,22 @@ form .input-submit .button-submit:hover{color:#ff7300; background:#FFF;}
 
 /*=========Кооректировка стилей ==========*/
 
-html {
+html.diler{
 	font-size: 16px;
 }
 
 .main-content.page-in {
 	max-width: 100%;
 	z-index: auto;
+}
+
+legend {
+	font-size: 16px !important;
+}
+
+label {
+	font-weight: 400 !important;
+}
+.form-diller__title span.otvet {
+	font-size: 16px !important;
 }
