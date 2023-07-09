@@ -3,6 +3,20 @@ import { isMobile } from "./functions.js";
 // Подключение списка активных модулей
 import { flsModules } from "./modules.js";
 
+
+setTimeout(() => {
+	const radio = document.querySelectorAll('.jq-radio')
+	const check = document.querySelectorAll('.jq-checkbox')
+	radio.forEach(element => {
+		element.remove()
+	});
+	check.forEach(element => {
+		element.remove()
+	});
+}, 10);
+
+
+//console.log(123);
 window.addEventListener("load", windowLoad);
 	
 	function windowLoad() {
@@ -54,12 +68,5 @@ window.addEventListener("load", windowLoad);
 			});
 		}
 	}
-	// document.querySelector('.form-diller__button').addEventListener('click', check)
-	// function check() {
-	// 	const chk =document.querySelectorAll('.form-diller__group > .checkbox > input[type="checkbox"]').checked;
-	// console.log(chk);
-	// if(chk.length < 1) {
-	// 	document.querySelector('.form-diller__check').insertAdjacentHTML('beforeend', `<div class="form__error">Выберите</div>`)
-	// }
-	// }
+	
 	

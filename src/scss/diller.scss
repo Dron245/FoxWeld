@@ -1,6 +1,22 @@
 .diler {
 	font-size: 16px !important;
+
+	legend { all: inherit !important;}
+	label { all: inherit !important;}
+	.radio, .checkbox { display: inherit !important;margin: inherit !important;}
+	
+	.radio + .radio, .checkbox + .checkbox {margin-top: inherit !important;}
+	.jq-checkbox { display: none !important;}
+	.radio label, .checkbox label { padding: inherit !important;}
+
 }
+
+.otvet {
+	font-size: 16px !important;
+}
+
+
+
 .diler .main-content {
 	max-width: 100% !important; 
 	z-index: auto !important;
@@ -18,6 +34,11 @@ p {
 		 font-size: 14px; 
 	}
 }
+
+
+
+
+
 /*=====ADVATAGES========*/
 
 .page {
