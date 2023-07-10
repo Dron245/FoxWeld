@@ -4,7 +4,11 @@ import { isMobile } from "./functions.js";
 import { flsModules } from "./modules.js";
 
 window.addEventListener("load", windowLoad);
-	
+
+if (document.querySelector('.diler')) {
+	const boots = document.querySelector('[href*=bootstrap]')
+	boots.remove()
+}
 	function windowLoad() {
 		function digitsCountersInit(digitsCountersItems){
 			let digitsCounters = digitsCountersItems ? digitsCountersItems : document.querySelectorAll('[data-digits-counter]');

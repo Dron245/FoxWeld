@@ -1,5 +1,20 @@
 .diler {
 	font-size: 16px !important;
+	
+		
+	
+		legend { all: inherit !important;}
+		label { all: inherit !important;}
+		.radio, .checkbox { display: inherit !important;margin: inherit !important;}
+		
+		.radio + .radio, .checkbox + .checkbox {margin-top: inherit !important;}
+		.jq-checkbox { display: none !important;}
+		.radio label, .checkbox label { padding: inherit !important;};
+		.jq-checkbox.checked +.checkbox__label .checkbox__body::after {opacity:1 !important};
+		.jq-radio.checked +.options__label::after {
+			transform:scale(1)
+		};
+	
 }
 .diler .main-content {
 	max-width: 100% !important; 
