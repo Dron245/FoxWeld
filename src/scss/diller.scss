@@ -2,7 +2,7 @@
 	font-size: 16px !important;
 
 	legend { all: inherit !important;}
-	label { all: inherit !important;}
+	//label { all: inherit !important;}
 	.radio, .checkbox { display: inherit !important;margin: inherit !important;}
 	
 	.radio + .radio, .checkbox + .checkbox {margin-top: inherit !important;}
@@ -420,6 +420,7 @@ p {
 	}
 
 	&__label {
+		position:relative;
 	}
 
 	&__text {
